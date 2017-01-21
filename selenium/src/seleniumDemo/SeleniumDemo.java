@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SeleniumDemo {
 
@@ -13,11 +15,15 @@ public class SeleniumDemo {
 		
 		System.setProperty("webdriver.chrome.driver", "D:/Vignesh/Selenium/chromedriver_win32/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
+		WebDriverWait Wait=new WebDriverWait(driver, 10);
 		//WebDriver driver=new FirefoxDriver();
 		Workflow s = new Workflow(driver);
+		
 		s.openPage();
 		s.login();
-		Thread.sleep(3000);
+		Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("icon-index")));
+		s.verify("Howdy, admin");
 		s.logout();
+		driver.quit();
 	}
 }
