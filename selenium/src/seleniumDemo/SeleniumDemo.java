@@ -12,7 +12,7 @@ public class SeleniumDemo {
 	public static void main(String[] args) throws Exception {
 		
 		
-		System.setProperty("webdriver.chrome.driver", "D:/Vignesh/Selenium/chromedriver_win32/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		WebDriverWait Wait=new WebDriverWait(driver, 10);
 		//WebDriver driver=new FirefoxDriver();
