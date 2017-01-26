@@ -1,5 +1,6 @@
 package demo;
 
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -7,14 +8,16 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.PriorityQueue;
 
+import data.ReadDataFromExcel;
+
 public class Demo {
 	protected String i;
 	int con;
 		Demo(int i){
 			this.con=i;
 		}
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) throws IOException {
+		System.out.println(System.getProperty("user.dir")+"/src/data");
 		System.out.println("This is a Demo");
 		Demo d1 = new Demo(1);
 		Demo d2 = new Demo(2);
@@ -61,7 +64,9 @@ public class Demo {
 		PriorityQueue<String> q = new PriorityQueue<String>();
 		ArrayList<Integer> ai = new ArrayList<Integer>();
 		ai.add(1);
-		
+		System.out.println(".....................");
+		ReadDataFromExcel excel = new ReadDataFromExcel();
+		String[][] a = excel.ReadExcel();
 		
 		
 		

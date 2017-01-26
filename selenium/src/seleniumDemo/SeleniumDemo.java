@@ -19,9 +19,15 @@ public class SeleniumDemo {
 		Workflow s = new Workflow(driver);
 		
 		s.openPage();
-		s.login();
+		s.login("admin","demo123");
 		Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("icon-index")));
-		s.verify("Howdy, admin");
+		String act = s.verify();
+		if(act.equals("Howdy, admin")){
+			System.out.println("Passed");	
+		}
+		else{
+			System.out.println("Failed");
+		}
 		s.logout();
 		driver.quit();
 	}

@@ -18,19 +18,15 @@ public class Workflow {
 	void openPage(){
 		d.get("http://demosite.center/wordpress/wp-login.php");
 	}
-	void login(){
-		d.findElement(By.id("user_login")).sendKeys("admin");
-		d.findElement(By.id("user_pass")).sendKeys("demo123");
+	void login(String username, String password){
+		d.findElement(By.id("user_login")).clear();
+		d.findElement(By.id("user_login")).sendKeys(username);
+		d.findElement(By.id("user_pass")).sendKeys(password);
 		d.findElement(By.id("wp-submit")).click();
 	}
-	void verify(String exp){
+	String verify(){
 		String act=d.findElement(By.xpath("//a[@title='My Account']")).getText();
-		if(exp.equals(act)){
-			System.out.println("Passed");	
-		}
-		else{
-			System.out.println("Failed");
-		}
+		return act;
 	}
 	void logout() throws InterruptedException{
 		Actions action = new Actions(d);
