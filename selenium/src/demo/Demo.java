@@ -17,7 +17,6 @@ public class Demo {
 			this.con=i;
 		}
 	public static void main(String[] args) throws IOException {
-		System.out.println(System.getProperty("user.dir")+"/src/data");
 		System.out.println("This is a Demo");
 		Demo d1 = new Demo(1);
 		Demo d2 = new Demo(2);
