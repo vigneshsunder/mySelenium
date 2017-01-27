@@ -22,9 +22,13 @@ public class Learn {
 		WebDriverWait wait = new WebDriverWait(driver,10);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		
+		
 /*		driver.get("http://demo.guru99.com/selenium/deprecated.html");
 		driver.switchTo().frame("classFrame");
-		driver.findElement(By.linkText("Deprecated")).click();*/
+		driver.findElement(By.linkText("Deprecated")).click();
+		driver.switchTo().parentFrame();
+		driver.switchTo().defaultContent();*/
 		
 		
 /*		driver.get("http://jsbin.com/usidix/1");
