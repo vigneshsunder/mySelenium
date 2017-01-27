@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Blog" duration-ms="29954" started-at="2017-01-27T07:18:53Z" finished-at="2017-01-27T07:19:23Z">
+  <suite name="Blog" duration-ms="30646" started-at="2017-01-27T08:18:25Z" finished-at="2017-01-27T08:18:55Z">
     <groups>
     </groups>
-    <test name="Login" duration-ms="29954" started-at="2017-01-27T07:18:53Z" finished-at="2017-01-27T07:19:23Z">
+    <test name="Login" duration-ms="30646" started-at="2017-01-27T08:18:25Z" finished-at="2017-01-27T08:18:55Z">
       <class name="seleniumDemo.TestNG">
-        <test-method status="PASS" signature="initiate()[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="initiate" is-config="true" duration-ms="2662" started-at="2017-01-27T12:48:53Z" finished-at="2017-01-27T12:48:56Z">
+        <test-method status="PASS" signature="initiate()[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="initiate" is-config="true" duration-ms="3226" started-at="2017-01-27T13:48:25Z" finished-at="2017-01-27T13:48:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiate -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test1" duration-ms="14703" started-at="2017-01-27T12:48:56Z" data-provider="login" finished-at="2017-01-27T12:49:11Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test1" duration-ms="14518" started-at="2017-01-27T13:48:29Z" data-provider="login" finished-at="2017-01-27T13:48:43Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test1" duration-ms="5980" started-at="2017-01-27T12:49:11Z" data-provider="login" finished-at="2017-01-27T12:49:17Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test1" duration-ms="5953" started-at="2017-01-27T13:48:43Z" data-provider="login" finished-at="2017-01-27T13:48:49Z">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test1" duration-ms="5110" started-at="2017-01-27T12:49:17Z" data-provider="login" finished-at="2017-01-27T12:49:22Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test1" duration-ms="5461" started-at="2017-01-27T13:48:49Z" data-provider="login" finished-at="2017-01-27T13:48:54Z">
           <params>
             <param index="0">
               <value>
@@ -59,11 +59,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test2" duration-ms="2" started-at="2017-01-27T12:49:22Z" finished-at="2017-01-27T12:49:22Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test2" duration-ms="2" started-at="2017-01-27T13:48:54Z" finished-at="2017-01-27T13:48:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="close" is-config="true" duration-ms="804" started-at="2017-01-27T12:49:22Z" finished-at="2017-01-27T12:49:23Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="close" is-config="true" duration-ms="799" started-at="2017-01-27T13:48:54Z" finished-at="2017-01-27T13:48:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
