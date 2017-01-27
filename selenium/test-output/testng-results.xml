@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34734" started-at="2017-01-26T18:10:20Z" finished-at="2017-01-26T18:10:55Z">
+  <suite name="Blog" duration-ms="29954" started-at="2017-01-27T07:18:53Z" finished-at="2017-01-27T07:19:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34734" started-at="2017-01-26T18:10:20Z" finished-at="2017-01-26T18:10:55Z">
+    <test name="Login" duration-ms="29954" started-at="2017-01-27T07:18:53Z" finished-at="2017-01-27T07:19:23Z">
       <class name="seleniumDemo.TestNG">
-        <test-method status="PASS" signature="initiate()[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="initiate" is-config="true" duration-ms="2652" started-at="2017-01-26T23:40:20Z" finished-at="2017-01-26T23:40:23Z">
+        <test-method status="PASS" signature="initiate()[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="initiate" is-config="true" duration-ms="2662" started-at="2017-01-27T12:48:53Z" finished-at="2017-01-27T12:48:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiate -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test1" duration-ms="14530" started-at="2017-01-26T23:40:23Z" data-provider="login" finished-at="2017-01-26T23:40:38Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test1" duration-ms="14703" started-at="2017-01-27T12:48:56Z" data-provider="login" finished-at="2017-01-27T12:49:11Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test1" duration-ms="8319" started-at="2017-01-26T23:40:38Z" data-provider="login" finished-at="2017-01-26T23:40:46Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test1" duration-ms="5980" started-at="2017-01-27T12:49:11Z" data-provider="login" finished-at="2017-01-27T12:49:17Z">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test1" duration-ms="7677" started-at="2017-01-26T23:40:46Z" data-provider="login" finished-at="2017-01-26T23:40:54Z">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test1" duration-ms="5110" started-at="2017-01-27T12:49:17Z" data-provider="login" finished-at="2017-01-27T12:49:22Z">
           <params>
             <param index="0">
               <value>
@@ -59,11 +59,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="close" is-config="true" duration-ms="833" started-at="2017-01-26T23:40:54Z" finished-at="2017-01-26T23:40:55Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="test2" duration-ms="2" started-at="2017-01-27T12:49:22Z" finished-at="2017-01-27T12:49:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="close()[pri:0, instance:seleniumDemo.TestNG@343f4d3d]" name="close" is-config="true" duration-ms="804" started-at="2017-01-27T12:49:22Z" finished-at="2017-01-27T12:49:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- seleniumDemo.TestNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login -->
+  </suite> <!-- Blog -->
 </testng-results>

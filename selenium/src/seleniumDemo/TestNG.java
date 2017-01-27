@@ -29,7 +29,7 @@ public class TestNG {
 	}
 
 	@Test(dataProvider="login")
-	public void test1(String user, String pass) throws InterruptedException{
+	public void test1(String user, String pass) throws InterruptedException, IOException{
 		Workflow s = new Workflow(driver);
 		s.openPage();
 		s.login(user,pass);
@@ -37,6 +37,10 @@ public class TestNG {
 		String act = s.verify();
 		Assert.assertEquals("Howdy, admin",act );
 		s.logout();
+	}
+	@Test
+	public void test2(){
+		System.out.println("Test 2 Executed");
 	}
 	@AfterTest
 	public void close(){

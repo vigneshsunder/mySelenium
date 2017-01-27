@@ -1,0 +1,8 @@
+name: Suite
+tests:
+  - name: Test
+    classes:
+      - name: seleniumDemo.TestNG
+        includedMethods:
+          - test2
+

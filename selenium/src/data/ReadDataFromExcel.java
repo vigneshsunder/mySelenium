@@ -2,7 +2,6 @@ package data;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.Sheet;
@@ -23,6 +22,7 @@ public class ReadDataFromExcel {
 				data[i-1][j] = sheet.getRow(i).getCell(j).getStringCellValue();
 			}
 		}
+		workbook.close();
 		return data;
 	}
 

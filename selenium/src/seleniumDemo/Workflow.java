@@ -1,8 +1,13 @@
 package seleniumDemo;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -18,7 +23,7 @@ public class Workflow {
 	void openPage(){
 		d.get("http://demosite.center/wordpress/wp-login.php");
 	}
-	void login(String username, String password){
+	void login(String username, String password) throws IOException{
 		d.findElement(By.id("user_login")).clear();
 		d.findElement(By.id("user_login")).sendKeys(username);
 		d.findElement(By.id("user_pass")).sendKeys(password);

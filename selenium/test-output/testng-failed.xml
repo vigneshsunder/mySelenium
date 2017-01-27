@@ -5,7 +5,7 @@
     <classes>
       <class name="seleniumDemo.TestNG">
         <methods>
-          <include name="test1" invocation-numbers="1 2"/>
+          <include name="test1" invocation-numbers="0 1 2"/>
           <include name="initiate"/>
           <include name="close"/>
         </methods>
