@@ -6,3 +6,4 @@
 [0126/173820:WARNING:in_range_cast.h(38)] value 2384186840182 out of range
 [0126/173820:WARNING:in_range_cast.h(38)] value 2384187698048 out of range
 [0126/173820:WARNING:in_range_cast.h(38)] value 2384299757312 out of range
+[0127/154202:ERROR:settings.cc(261)] Settings magic is not 1129342067

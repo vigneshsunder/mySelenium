@@ -12,6 +12,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.google.common.base.Verify;
+
 import data.ReadDataFromExcel;
 import junit.framework.Assert;
 
@@ -35,12 +37,18 @@ public class TestNG {
 		s.login(user,pass);
 		Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("icon-index")));
 		String act = s.verify();
-		Assert.assertEquals("Howdy, admin",act );
+		Assert.assertEquals("Howdy, admi",act );
 		s.logout();
 	}
 	@Test
 	public void test2(){
+		try{
+		Assert.assertEquals(true, true);
+		}catch(AssertionError e){
+			Assert.fail();
+		}
 		System.out.println("Test 2 Executed");
+		
 	}
 	@AfterTest
 	public void close(){

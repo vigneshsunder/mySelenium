@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Blog]">
-  <test name="Login(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
       <class name="seleniumDemo.TestNG">
         <methods>
-          <include name="test1" invocation-numbers="0 1 2"/>
+          <include name="test2"/>
           <include name="initiate"/>
           <include name="close"/>
         </methods>
       </class> <!-- seleniumDemo.TestNG -->
     </classes>
-  </test> <!-- Login(failed) -->
-</suite> <!-- Failed suite [Blog] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

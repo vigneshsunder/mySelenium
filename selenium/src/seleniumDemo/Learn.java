@@ -1,10 +1,17 @@
 package seleniumDemo;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Date;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,14 +21,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Learn {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
 		System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		WebDriverWait wait = new WebDriverWait(driver,10);
+		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+
 		
 		
 /*		driver.get("http://demo.guru99.com/selenium/deprecated.html");
@@ -76,6 +85,10 @@ public class Learn {
 		
 		
 		driver.get("https://www.google.com");
+		File ss = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(ss, new File("F:/ss.png"));
+		Set<String> winhandle = driver.getWindowHandles();
+		System.out.println(winhandle.iterator().next());
 		try{
 			if(driver.findElement(By.id("vig")).isDisplayed()){
 			System.out.println("Element Present");
@@ -83,7 +96,6 @@ public class Learn {
 		}catch(NoSuchElementException e){
 			System.out.println("Element Not Present");
 		}
-		
 
 	}
 
