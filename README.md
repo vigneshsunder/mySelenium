@@ -1,2 +1,0 @@
-# mySelenium
-My selenium project
