@@ -37,7 +37,7 @@ public class TestNG {
 		s.login(user,pass);
 		Wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("icon-index")));
 		String act = s.verify();
-		Assert.assertEquals("Howdy, admi",act );
+		Assert.assertEquals("Howdy, admin",act );
 		s.logout();
 	}
 	@Test

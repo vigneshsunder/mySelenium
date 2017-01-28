@@ -97,7 +97,10 @@ public class Learn {
 			System.out.println("Element Not Present");
 		}*/
 		
+		
 		driver.get("https://encodable.com/uploaddemo/");
+		System.out.println(driver.findElements(By.name("Vig")).size());
+		System.out.println(driver.findElement(By.id("uploadname1")).getText());
 		driver.findElement(By.id("uploadname1")).click();
 		Thread.sleep(2000);
 		Runtime.getRuntime().exec( "wscript " + System.getProperty("user.dir") + "/files/script.vbs" );
