@@ -17,6 +17,7 @@ public class Demo {
 			this.con=i;
 		}
 	public static void main(String[] args) throws IOException {
+		//Runtime.getRuntime().exec( "wscript C:/Users/Vignesh/Documents/script.vbs" );
 		System.out.println("This is a Demo");
 		Demo d1 = new Demo(1);
 		Demo d2 = new Demo(2);

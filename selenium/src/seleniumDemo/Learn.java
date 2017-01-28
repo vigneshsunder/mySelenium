@@ -21,7 +21,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Learn {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 
 		System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
@@ -84,7 +84,7 @@ public class Learn {
 		
 		
 		
-		driver.get("https://www.google.com");
+/*		driver.get("https://www.google.com");
 		File ss = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(ss, new File("F:/ss.png"));
 		Set<String> winhandle = driver.getWindowHandles();
@@ -95,7 +95,12 @@ public class Learn {
 			}
 		}catch(NoSuchElementException e){
 			System.out.println("Element Not Present");
-		}
+		}*/
+		
+		driver.get("https://encodable.com/uploaddemo/");
+		driver.findElement(By.id("uploadname1")).click();
+		Thread.sleep(2000);
+		Runtime.getRuntime().exec( "wscript " + System.getProperty("user.dir") + "/files/script.vbs" );
 
 	}
 
