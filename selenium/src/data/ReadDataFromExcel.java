@@ -10,9 +10,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadDataFromExcel {
 	public String[][] ReadExcel() throws IOException{
-		File file = new File(System.getProperty("user.dir")+"/src/data/LoginData.xlsx");
-		FileInputStream inputStream = new FileInputStream(file);
-		Workbook workbook = new XSSFWorkbook(inputStream);
+		//File file = new File(System.getProperty("user.dir")+"/src/data/LoginData.xlsx");
+		//FileInputStream inputStream = new FileInputStream(file);
+		Workbook workbook = new XSSFWorkbook(System.getProperty("user.dir")+"/src/data/LoginData.xlsx");
 		Sheet sheet = workbook.getSheet("Login");
 		int rowCount = sheet.getLastRowNum();
 		int colCount = sheet.getRow(0).getLastCellNum();

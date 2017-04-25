@@ -23,7 +23,7 @@ public class TestNG {
 	WebDriverWait Wait;
 	@BeforeTest
 	public void initiate(){
-		System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:/Selenium/chromedriver_win32/chromedriver.exe");
 		driver=new ChromeDriver();
 		Wait=new WebDriverWait(driver, 10);
 		//WebDriver driver=new FirefoxDriver();
