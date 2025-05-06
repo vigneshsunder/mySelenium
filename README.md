@@ -1,2 +1,2 @@
 # mySelenium
-My selenium project
+My selenium project for learning
